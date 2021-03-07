@@ -19,8 +19,8 @@ website_list = [
     "gmail.com",
 ]
 
-while True:
 
+while True:
     # time of your work
     if (
         dt(dt.now().year, dt.now().month, dt.now().day, 9)
