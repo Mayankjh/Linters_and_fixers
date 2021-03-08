@@ -1,15 +1,22 @@
 # Run this script as root
 
+# Standard library imports
 import time
 from datetime import datetime as dt
+
+# Third party imports
+import numpy
+import pandas
 
 # change hosts path according to your OS
 hosts_temp = r"D:\Python Training\Day 7\website blocker\hosts\hosts"
 hosts_path = r"C:\Windows\System32\drivers\etc\hosts"
 # localhost's IP
 redirect = "127.0.0.1"
+password = "123456"
 
-# websites That you want to block
+
+# websites That you want to block below
 website_list = [
     "www.facebook.com",
     "facebook.com",
@@ -38,7 +45,8 @@ while True:
                     file.write(redirect + " " + website + "\n")
     else:
         with open(hosts_temp, "r+") as file:
-            content = file.readlines()
+            [content] = file.readlines()
+            print(content)
             file.seek(0)
             for line in content:
                 if not any(website in line for website in website_list):
