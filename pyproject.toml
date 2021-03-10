@@ -30,7 +30,7 @@ exclude = '''
 [tool.coverage.run]
 branch = true
 command_line = '-m pytest'
-source = ['app/']
+source = ['']
 
 [tool.coverage.report]
 precision = 2
