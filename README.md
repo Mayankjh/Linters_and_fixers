@@ -11,7 +11,7 @@ It includes hooks for:
 * [Safety](https://github.com/pyupio/safety): It scans your installed dependencies for known security vulnerabilities. By default it uses the safety-db database with known vulnerabilities.
 
 
-Steps for running the pre-commit hooks: 
+## Steps for running the pre-commit hooks: 
 1. Clone this repository: `git clone `
 2. Remove Websiteblocker.py
 3. Install pre-commit hooks `pre-commit install` 
